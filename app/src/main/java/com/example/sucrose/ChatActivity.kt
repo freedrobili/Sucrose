@@ -10,10 +10,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sucrose.recycle.AdapterChat
-import com.example.sucrose.Retrofit.ForumMessage.ForumMessage
-import com.example.sucrose.Retrofit.ForumMessage.ForumMessageItem
-import com.example.sucrose.Retrofit.message.Message
-import com.example.sucrose.Retrofit.UserService
+import com.example.sucrose.retrofit.forumMessage.ForumMessage
+import com.example.sucrose.retrofit.forumMessage.ForumMessageItem
+import com.example.sucrose.retrofit.message.Message
+import com.example.sucrose.retrofit.UserService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

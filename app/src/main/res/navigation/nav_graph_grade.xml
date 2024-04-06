@@ -6,12 +6,12 @@
     app:startDestination="@id/gradeScorePointFragment">
     <fragment
         android:id="@+id/gradeScorePointFragment"
-        android:name="com.example.sucrose.screens.Grade.GradeScorePointFragment"
+        android:name="com.example.sucrose.screens.grade.GradeScorePointFragment"
         android:label="fragment_grade_score_point"
         tools:layout="@layout/fragment_grade_score_point" />
     <fragment
         android:id="@+id/gradeDocumentFragment2"
-        android:name="com.example.sucrose.screens.Grade.GradeDocumentFragment"
+        android:name="com.example.sucrose.screens.grade.GradeDocumentFragment"
         android:label="fragment_grade_document"
         tools:layout="@layout/fragment_grade_document" />
 </navigation>

@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sucrose.Retrofit.studentTimeTable.Lesson
+import com.example.sucrose.retrofit.studentTimeTable.Lesson
 import com.example.sucrose.R
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView

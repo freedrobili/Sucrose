@@ -12,7 +12,7 @@ import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.example.hu_tao.Retrofit.TokenResponse
 import com.example.sucrose.R
-import com.example.sucrose.Retrofit.AuthService
+import com.example.sucrose.retrofit.AuthService
 import com.google.gson.Gson
 import retrofit2.Call
 import retrofit2.Callback

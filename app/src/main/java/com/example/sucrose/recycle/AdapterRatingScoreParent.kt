@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sucrose.Retrofit.studentRatingPlan.Section
+import com.example.sucrose.retrofit.studentRatingPlan.Section
 import com.example.sucrose.R
 
 class AdapterRatingScoreParent(private val sections: List<Section>) :

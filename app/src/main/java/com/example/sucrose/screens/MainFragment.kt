@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.example.sucrose.R
-import com.example.sucrose.Retrofit.studentSemester.StudentSemestrNoArgument
-import com.example.sucrose.Retrofit.UserService
+import com.example.sucrose.retrofit.studentSemester.StudentSemestrNoArgument
+import com.example.sucrose.retrofit.UserService
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.gson.Gson
 import retrofit2.Call

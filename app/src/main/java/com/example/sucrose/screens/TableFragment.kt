@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sucrose.R
 import com.example.sucrose.recycle.AdapterTimeTable
-import com.example.sucrose.Retrofit.studentTimeTable.StudentTimeTable
-import com.example.sucrose.Retrofit.UserService
+import com.example.sucrose.retrofit.studentTimeTable.StudentTimeTable
+import com.example.sucrose.retrofit.UserService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

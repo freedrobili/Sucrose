@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.sucrose.R
-import com.example.sucrose.Retrofit.user.User
-import com.example.sucrose.Retrofit.UserService
+import com.example.sucrose.retrofit.user.User
+import com.example.sucrose.retrofit.UserService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

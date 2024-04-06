@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sucrose.Retrofit.ForumMessage.ForumMessage
+import com.example.sucrose.retrofit.forumMessage.ForumMessage
 import com.example.sucrose.R
 
 // Адаптер для RecyclerView, отображающий сообщения в чате

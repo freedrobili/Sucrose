@@ -18,11 +18,11 @@ import com.example.sucrose.ChatActivity
 import com.example.sucrose.Discipline_item
 import com.example.sucrose.MyAdapter
 import com.example.sucrose.R
-import com.example.sucrose.Retrofit.discepline.RecordBook
-import com.example.sucrose.Retrofit.discepline.StudentSemester
-import com.example.sucrose.Retrofit.studentSemester.StudentSemestrItem
-import com.example.sucrose.Retrofit.studentSemester.StudentSemestrNoArgument
-import com.example.sucrose.Retrofit.UserService
+import com.example.sucrose.retrofit.discipline.RecordBook
+import com.example.sucrose.retrofit.discipline.StudentSemester
+import com.example.sucrose.retrofit.studentSemester.StudentSemestrItem
+import com.example.sucrose.retrofit.studentSemester.StudentSemestrNoArgument
+import com.example.sucrose.retrofit.UserService
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import retrofit2.Call

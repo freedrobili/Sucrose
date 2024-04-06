@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sucrose.Retrofit.studentRatingPlan.ControlDot
+import com.example.sucrose.retrofit.studentRatingPlan.ControlDot
 import com.example.sucrose.R
 
 class AdapterRatingScoreChild(private val controldots: List<ControlDot>) :

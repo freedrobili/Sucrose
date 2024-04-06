@@ -9,7 +9,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sucrose.R
 
-class MyAdapterControlPoint(private val controlpointList: ArrayList<СontrolDotView>) :
+class MyAdapterControlPoint(private val controlpointList: ArrayList<ControlDotView>) :
     RecyclerView.Adapter<MyAdapterControlPoint.MyViewHolder>() {
 
 
