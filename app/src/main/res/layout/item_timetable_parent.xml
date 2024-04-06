@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:minHeight="50dp"
+    app:cardCornerRadius="10dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linnear_item_timetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relate_top_parent"
+            android:layout_width="match_parent"
+            android:background="@color/light_purple"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/Header_table"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="Linnett"
+                android:textSize="20sp"
+                 />
+
+            <ImageView
+                android:id="@+id/clickker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/keyboard_arrow_down" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_timetable_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/fon_app"
+                android:id="@+id/recycler_timetable_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

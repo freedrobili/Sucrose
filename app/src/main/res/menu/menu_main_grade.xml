@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Файлы"
+    android:id="@+id/gradeDocumentFragment2"
+    android:icon="@drawable/baseline_info_24"
+    android:orderInCategory="2"
+    />
+
+
+    <item android:title="Контрольные точки"
+        android:id="@+id/gradeScorePointFragment"
+        android:icon="@drawable/baseline_view_headline_24"
+        android:orderInCategory="1"
+        />
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fon_app"
+    tools:context=".screens.Grade.GradeScorePointFragment">
+
+             <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/RatingScoreRecycler_parent"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 android:layout_marginBottom="40dp"
+                 tools:listitem="@layout/item_raitingscore_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/light_purple"
+        android:layout_marginTop="-40dp"
+        android:layout_below="@id/RatingScoreRecycler_parent"
+        >
+        <TextView
+            android:id="@+id/score_gradefragment"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_centerVertical="true"
+            android:text="Всего: 0/100"
+            android:layout_height="30dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

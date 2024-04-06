@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/disciplineFragment">
+
+    <fragment
+        android:id="@+id/gradeFragment"
+        android:name="com.example.sucrose.screens.GradeFragment"
+        android:label="fragment_grade"
+        tools:layout="@layout/fragment_grade" />
+    <fragment
+        android:id="@+id/disciplineFragment"
+        android:name="com.example.sucrose.screens.DisciplineFragment"
+        android:label="fragment_discipline"
+        tools:layout="@layout/fragment_discipline" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.sucrose.screens.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/talkFragment"
+        android:name="com.example.sucrose.screens.TalkFragment"
+        android:label="fragment_talk"
+        tools:layout="@layout/fragment_talk" />
+    <fragment
+        android:id="@+id/tableFragment"
+        android:name="com.example.sucrose.screens.TableFragment"
+        android:label="fragment_table"
+        tools:layout="@layout/fragment_table" />
+</navigation>

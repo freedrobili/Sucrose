@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    android:minHeight="50dp"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linnear_item_ratingscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relate_top_parent"
+            android:layout_width="match_parent"
+            android:background="@color/light_purple"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Title_ratingscore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Языки программирования"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_ratingscore_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/fon_app"
+                android:id="@+id/recycler_ratingscore_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

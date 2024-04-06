@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/fon_app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <!--показать фишку которую не смог осилить-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/time_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+
+                android:minHeight="30dp"
+                android:background="@color/fon_app"
+                >
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="--13.12.2023--"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            нижняя часть с сообщениями-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/message_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:minHeight="30dp"
+                android:background="@color/fon_app"
+                >
+                <!--                сообщение остальных-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/other_usermessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:minWidth="170dp"
+                    android:minHeight="30dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                           <!--ФИО Других пользователей-->
+                            <TextView
+                                android:id="@+id/name_sms_otheruser"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="10dp"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="2dp"
+                                android:paddingEnd="15dp"
+                                android:text="Биушкин Денис Витальевич"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                      <!--текст других пользователей                        -->
+                        <TextView
+                            android:id="@+id/textmessage_sms_otheruser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:maxWidth="280dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Учись!Пойми,что знание есть власть,Умей людей любить с благоговеньем и проверяй бунтующую страсть В смысл красоты и веры благородной; Живи умно, как человек свободный."
+                            />
+                        >
+                       <!--время и дата отправки смс других пользователей-->
+                        <TextView
+                            android:id="@+id/timedate_sms_otheruser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="2dp"
+                            android:paddingStart="10dp"
+                            android:text="13.12.2023 13:03"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                 <!--сообщение пользователя аккаунта-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_mymessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:minHeight="50dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                           <!--ФИО пользователя аккаунта-->
+                            <TextView
+                                android:id="@+id/name_sms_user"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="10dp"
+                                android:paddingTop="2dp"
+                                android:inputType="textMultiLine"
+                                android:paddingBottom="2dp"
+                                android:paddingEnd="10dp"
+                                android:text="Биушкин Денис Витальевич"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                           <!--кнопка удаления sms -->
+                            <ImageView
+                                android:id="@+id/delete_sms"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginEnd="5dp"
+                                app:srcCompat="@drawable/baseline_clear_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <!--текст sms пользователя аккаунта-->
+                        <TextView
+                            android:id="@+id/textmessage_sms_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:maxWidth="280dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Учись!Пойми,что знание есть власть,Умей людей любить с благоговеньем и проверяй бунтующую страсть В смысл красоты и веры благородной; Живи умно, как человек свободный."
+                            />
+                        <!--время и дата отправления смс с аккаунта пользователя-->
+                        <TextView
+                            android:id="@+id/timedate_sms_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="2dp"
+                            android:paddingStart="10dp"
+                            android:text="13.12.2023 13:03"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

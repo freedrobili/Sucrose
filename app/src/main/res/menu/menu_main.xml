@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Дом"
+          android:id="@+id/gradeFragment"
+          android:icon="@drawable/baseline_home_24"
+          android:orderInCategory="1"
+        />
+
+
+    <item android:title="Успеваемость"
+        android:id="@+id/disciplineFragment"
+        android:icon="@drawable/baseline_school_24"
+        android:orderInCategory="2"
+        />
+
+    <item android:title="Расписание"
+        android:id="@+id/tableFragment"
+        android:icon="@drawable/baseline_web_asset_24"
+        android:orderInCategory="3"
+        />
+
+    <item android:title="Общение"
+        android:id="@+id/talkFragment"
+        android:icon="@drawable/baseline_speaker_notes_24"
+        android:orderInCategory="4"
+        />
+    <item android:title="Настройки"
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/baseline_settings_24"
+        android:orderInCategory="5"
+        />
+</menu>
